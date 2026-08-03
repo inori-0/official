@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="神無罪祈（Inori Kannatsumi）の記念イラストや作品を掲載するギャラリーです。">
+    <title>Gallery | Inori Kannatsumi Official Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <a class="site-logo" href="index.html" aria-label="トップページへ">
+            <span class="logo-pearl" aria-hidden="true"></span>
+            <span>Inori Kannatsumi</span>
+            <span class="logo-pearl" aria-hidden="true"></span>
+        </a>
+
+        <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="global-nav" class="global-nav" aria-label="メインメニュー">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="gallery.html" class="current">Gallery</a>
+            <a href="index.html#news">News</a>
+            <a href="#footer">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="gallery-page">
+    <section class="gallery-main-section">
+        <div class="section-inner">
+            <div class="section-heading">
+                <p class="section-label">ARTWORKS</p>
+                <h1>Gallery</h1>
+                <div class="heading-decoration" aria-hidden="true">
+                    <span class="heading-line"></span>
+                    <span class="heading-pearl"></span>
+                    <span class="heading-ribbon">◇</span>
+                    <span class="heading-pearl"></span>
+                    <span class="heading-line"></span>
+                </div>
+                <p class="gallery-description">記念イラストや活動の中で生まれた作品をご紹介します。</p>
+            </div>
+
+
+           <div id="gallery-categories"></div>
+            <div class="detail-navigation-buttons gallery-navigation">
+                <a class="more-button" href="index.html"><span>Home</span><span aria-hidden="true">◇</span></a>
+                <a class="more-button" href="profile.html"><span>Profile</span><span aria-hidden="true">◇</span></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" class="site-footer">
+    <div class="footer-lace" aria-hidden="true"></div>
+    <div class="footer-inner">
+        <p class="footer-title">Inori Kannatsumi</p>
+        <p class="footer-message">Official Website</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <p class="copyright">&copy; 2026 Inori Kannatsumi. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<div class="gallery-lightbox" id="gallery-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="作品の拡大表示">
+    <button class="gallery-lightbox-close" type="button" aria-label="拡大表示を閉じる">×</button>
+    <div class="gallery-lightbox-content">
+        <img class="gallery-lightbox-image" src="" alt="">
+        <div class="gallery-lightbox-info">
+            <p class="gallery-lightbox-title"></p>
+            <p class="gallery-lightbox-illustrator"></p>
+        </div>
+    </div>
+</div>
+
+<script src="js/gallery-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

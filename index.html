@@ -1,523 +1,402 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
         name="description"
         content="IRIAMで活動中のVライバー、神無罪祈（Inori Kannatsumi）の公式ウェブサイトです。"
     >
-
     <title>Inori Kannatsumi Official Website</title>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
         rel="stylesheet"
     >
 
-    <link
-        rel="stylesheet"
-        href="css/style.css"
-    >
-
-    <link
-        rel="icon"
-        type="image/png"
-        href="images/favicon.png"
-    >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 
-    <!-- Header -->
+<header class="site-header">
+    <div class="header-inner">
 
-    <header class="site-header">
+        <a class="site-logo" href="index.html" aria-label="トップページへ">
+            <span class="logo-pearl" aria-hidden="true"></span>
+            <span>Inori Kannatsumi</span>
+            <span class="logo-pearl" aria-hidden="true"></span>
+        </a>
 
-        <div class="header-inner">
+        <button
+            class="menu-button"
+            type="button"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="global-nav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-            <a
-                class="site-logo"
-                href="index.html"
+        <nav id="global-nav" class="global-nav" aria-label="メインメニュー">
+            <a href="#home" class="current">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section id="home" class="hero">
+
+        <div class="hero-inner">
+
+            <div
+                class="hero-lace hero-lace-top"
+                aria-hidden="true"
+            ></div>
+
+            <img
+                class="hero-image"
+                src="images/banner.jpg"
+                alt="神無罪祈 Inori Kannatsumi メインビジュアル"
             >
-                <span class="logo-pearl"></span>
 
-                <span>
-                    Inori Kannatsumi
-                </span>
-
-                <span class="logo-pearl"></span>
-            </a>
-
-            <button
-                class="menu-button"
-                type="button"
-                aria-label="メニューを開く"
-                aria-expanded="false"
-                aria-controls="global-nav"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav
-                id="global-nav"
-                class="global-nav"
-            >
-                <a href="#home">
-                    Home
-                </a>
-
-                <a href="#profile">
-                    Profile
-                </a>
-
-                <a href="gallery.html">
-                    Gallery
-                </a>
-
-                <a href="#news">
-                    News
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-            </nav>
+            <div
+                class="hero-lace hero-lace-bottom"
+                aria-hidden="true"
+            ></div>
 
         </div>
 
-    </header>
-
-
-    <main>
-
-        <!-- Home -->
-
-        <section
-            id="home"
-            class="hero"
+        <a
+            class="scroll-button"
+            href="#profile"
+            aria-label="プロフィールへ移動"
         >
+            <span></span>
+        </a>
 
-            <div class="hero-inner">
+    </section>
 
-                <div class="hero-lace hero-lace-top">
-                    <span></span>
-                </div>
+    <section id="profile" class="content-section profile-section">
 
-                <img
-                    class="hero-image"
-                    src="images/banner.jpg"
-                    alt="神無罪祈 Inori Kannatsumi メインビジュアル"
-                >
+        <div class="section-inner">
 
-                <div class="hero-lace hero-lace-bottom">
-                    <span></span>
-                </div>
+            <div class="profile-layout">
 
-            </div>
+                <div class="profile-left">
 
-            <a
-                class="scroll-button"
-                href="#profile"
-                aria-label="プロフィールへ移動"
-            >
-                <span></span>
-            </a>
-
-        </section>
-
-
-        <!-- Profile -->
-
-        <section
-            id="profile"
-            class="content-section profile-section"
-        >
-
-            <div class="section-inner">
-
-                <div class="profile-layout">
-
-                    <div class="profile-left">
-
-                        <div class="profile-visual">
-
-                            <img
-                                src="images/profile.png"
-                                alt="神無罪祈の全身立ち絵"
-                            >
-
-                        </div>
-
-                        <nav
-                            class="profile-text-links"
-                            aria-label="公式リンク"
+                    <div class="profile-visual">
+                        <img
+                            src="images/profile.png"
+                            alt="神無罪祈の全身立ち絵"
                         >
-                            <a
-                                href="https://www.youtube.com/@nullxvoidxx"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                YouTube
-                            </a>
-
-                            <span aria-hidden="true">◇</span>
-
-                            <a
-                                href="https://x.com/nullxvoidxx"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                X
-                            </a>
-
-                            <span aria-hidden="true">◇</span>
-
-                            <a
-                                href="https://web.iriam.app/s/user/3M1T134PWo?uuid=e7f61f56"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                IRIAM
-                            </a>
-
-                            <span aria-hidden="true">◇</span>
-
-                            <a
-                                href="https://note.com/nullxvoidxx"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                note
-                            </a>
-                        </nav>
-
                     </div>
 
+                    <nav
+                        class="profile-text-links"
+                        aria-label="公式リンク"
+                    >
+                        <a
+                            href="https://www.youtube.com/@nullxvoidxx"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            YouTube
+                        </a>
 
-                    <div class="profile-content">
+                        <a
+                            href="https://x.com/nullxvoidxx"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            X
+                        </a>
 
-                        <div class="section-heading profile-heading">
+                        <a
+                            href="https://web.iriam.app/s/user/3M1T134PWo?uuid=e7f61f56"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            IRIAM
+                        </a>
 
-                            <p class="section-label">
-                                ABOUT ME
-                            </p>
-
-                            <h2>
-                                Profile
-                            </h2>
-
-                            <div class="heading-decoration">
-
-                                <span class="heading-line"></span>
-                                <span class="heading-pearl"></span>
-                                <span class="heading-ribbon">♢</span>
-                                <span class="heading-pearl"></span>
-                                <span class="heading-line"></span>
-
-                            </div>
-
-                        </div>
-
-                        <p class="profile-small-title">
-                            VIRTUAL LIVER
-                        </p>
-
-                        <h3>
-                            神無罪 祈
-                        </h3>
-
-                        <p class="profile-english-name">
-                            Inori Kannatsumi
-                        </p>
-
-                        <div class="profile-divider">
-                            <span></span>
-                            <b>✦</b>
-                            <span></span>
-                        </div>
-
-                        <p class="profile-description">
-                            IRIAMで活動中のVライバー。<br>
-                            雑談配信をメインに活動しています。
-                        </p>
-
-                        <dl class="profile-list">
-
-                            <div>
-                                <dt>名前</dt>
-                                <dd>神無罪 祈</dd>
-                            </div>
-
-                            <div>
-                                <dt>英語表記</dt>
-                                <dd>Inori Kannatsumi</dd>
-                            </div>
-
-                            <div>
-                                <dt>誕生日</dt>
-                                <dd>7/8</dd>
-                            </div>
-
-                            <div>
-                                <dt>デビュー</dt>
-                                <dd>2025/3/17</dt>
-                            </div>
-
-                            <div>
-                                <dt>ハッシュタグ</dt>
-                                <dd>#おいのりレター</dd>
-                            </div>
-
-                        </dl>
-
-                    </div>
+                        <a
+                            href="https://note.com/nullxvoidxx"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            note
+                        </a>
+                    </nav>
 
                 </div>
 
-            </div>
+                <div class="profile-content">
 
-        </section>
+                    <div class="section-heading profile-heading">
 
+                        <p class="section-label">CHARACTER</p>
 
-        <!-- Gallery Preview -->
+                        <h2>Profile</h2>
 
-        <section
-            id="gallery"
-            class="gallery-preview-section"
-        >
+                        <div
+                            class="heading-decoration"
+                            aria-hidden="true"
+                        >
+                            <span class="heading-line"></span>
+                            <span class="heading-pearl"></span>
+                            <span class="heading-ribbon">◇</span>
+                            <span class="heading-pearl"></span>
+                            <span class="heading-line"></span>
+                        </div>
 
-            <div class="lace-border"></div>
+                    </div>
 
-            <div class="section-inner gallery-preview-inner">
+                    <h3 class="profile-name">神無罪 祈</h3>
 
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        ARTWORKS
+                    <p class="profile-english-name">
+                        Inori Kannatsumi
                     </p>
 
-                    <h2>
-                        Gallery
-                    </h2>
-
-                    <div class="heading-decoration">
-
-                        <span class="heading-line"></span>
-                        <span class="heading-pearl"></span>
-                        <span class="heading-ribbon">♢</span>
-                        <span class="heading-pearl"></span>
-                        <span class="heading-line"></span>
-
+                    <div
+                        class="profile-divider"
+                        aria-hidden="true"
+                    >
+                        <span></span>
+                        <b>◇</b>
+                        <span></span>
                     </div>
 
-                </div>
-
-
-                <div class="gallery-preview-grid">
-
-                    <a
-                        class="gallery-card"
-                        href="gallery.html"
-                    >
-                        <img
-                            src="images/gallery/gallery001.png"
-                            alt="神無罪祈 ギャラリー画像1"
-                            loading="lazy"
-                        >
-
-                        <span class="gallery-card-text">
-                            View Gallery
-                        </span>
-                    </a>
-
-
-                    <a
-                        class="gallery-card"
-                        href="gallery.html"
-                    >
-                        <img
-                            src="images/gallery/gallery002.png"
-                            alt="神無罪祈 ギャラリー画像2"
-                            loading="lazy"
-                        >
-
-                        <span class="gallery-card-text">
-                            View Gallery
-                        </span>
-                    </a>
-
-                </div>
-
-
-                <div class="section-button-area">
-
-                    <a
-                        class="more-button"
-                        href="gallery.html"
-                    >
-                        Galleryをもっと見る
-                        <span>→</span>
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="lace-border lace-border-bottom"></div>
-
-        </section>
-
-
-        <!-- News -->
-
-        <section
-            id="news"
-            class="content-section news-section"
-        >
-
-            <div class="section-inner">
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        INFORMATION
+                    <p class="profile-description">
+                        IRIAMで活動中のVライバー。<br>
+                        雑談配信を中心に活動している、
+                        インターネット老人会のシスターお姉さんです。
                     </p>
 
-                    <h2>
-                        News
-                    </h2>
+                    <dl class="profile-list">
+                        <div>
+                            <dt>名前</dt>
+                            <dd>神無罪 祈</dd>
+                        </div>
 
-                    <div class="heading-decoration">
+                        <div>
+                            <dt>誕生日</dt>
+                            <dd>7月8日</dd>
+                        </div>
 
-                        <span class="heading-line"></span>
-                        <span class="heading-pearl"></span>
-                        <span class="heading-ribbon">♢</span>
-                        <span class="heading-pearl"></span>
-                        <span class="heading-line"></span>
+                        <div>
+                            <dt>デビュー</dt>
+                            <dd>2025年3月17日</dd>
+                        </div>
 
+                        <div>
+                            <dt>ハッシュタグ</dt>
+                            <dd>#おいのりレター</dd>
+                        </div>
+                    </dl>
+
+                    <div class="profile-detail-link-area">
+                        <a
+                            class="profile-detail-link"
+                            href="profile.html"
+                        >
+                            <span>詳しいプロフィールを見る</span>
+                            <span aria-hidden="true">◇</span>
+                        </a>
                     </div>
 
                 </div>
 
-                <div class="news-list">
-
-                    <article class="news-item">
-
-                        <time datetime="2026-07-26">
-                            2026.07.26
-                        </time>
-
-                        <p>
-                            公式ウェブサイトを公開しました。
-                        </p>
-
-                    </article>
-
-                    <article class="news-item">
-
-                        <time datetime="2026-07-26">
-                            2026.07.26
-                        </time>
-
-                        <p>
-                            最新のお知らせはこちらに掲載します。
-                        </p>
-
-                    </article>
-
-                </div>
-
             </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-
-    <footer
-        id="contact"
-        class="site-footer"
-    >
-
-        <div class="footer-lace"></div>
-
-        <div class="footer-inner">
-
-            <p class="footer-title">
-                Contact
-            </p>
-
-            <p class="footer-message">
-                お問い合わせや各種ご連絡は、公式SNSよりお願いいたします。
-            </p>
-
-            <div class="footer-links">
-
-                <a
-                    href="https://www.youtube.com/@nullxvoidxx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    YouTube
-                </a>
-
-                <a
-                    href="https://x.com/nullxvoidxx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    X
-                </a>
-
-                <a
-                    href="https://web.iriam.app/s/user/3M1T134PWo?uuid=e7f61f56"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    IRIAM
-                </a>
-
-                <a
-                    href="https://note.com/nullxvoidxx"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    note
-                </a>
-
-            </div>
-
-            <p class="copyright">
-                &copy; 2026 Inori Kannatsumi. All Rights Reserved.
-            </p>
 
         </div>
 
-    </footer>
+    </section>
 
-    <script src="js/script.js"></script>
+    <section id="gallery" class="gallery-preview-section">
+
+        <div
+            class="lace-border"
+            aria-hidden="true"
+        ></div>
+
+        <div class="section-inner gallery-preview-inner">
+
+            <div class="section-heading">
+
+                <p class="section-label">ARTWORKS</p>
+
+                <h2>Gallery</h2>
+
+                <div
+                    class="heading-decoration"
+                    aria-hidden="true"
+                >
+                    <span class="heading-line"></span>
+                    <span class="heading-pearl"></span>
+                    <span class="heading-ribbon">◇</span>
+                    <span class="heading-pearl"></span>
+                    <span class="heading-line"></span>
+                </div>
+
+            </div>
+
+            <div class="gallery-preview-grid">
+
+               <div class="gallery-card">
+                    <img
+                        src="images/gallery/gallery001.png"
+                        alt="2025バースデーイラスト"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="gallery-card">
+                    <img
+                        src="images/gallery/gallery002.png"
+                        alt="3か月記念イラスト"
+                        loading="lazy"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="section-button-area">
+                <a class="more-button" href="gallery.html">
+                    <span>Galleryをもっと見る</span>
+                    <span aria-hidden="true">◇</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div
+            class="lace-border lace-border-bottom"
+            aria-hidden="true"
+        ></div>
+
+    </section>
+
+    <section id="news" class="content-section news-section">
+
+        <div class="section-inner">
+
+            <div class="section-heading">
+
+                <p class="section-label">INFORMATION</p>
+
+                <h2>News</h2>
+
+                <div
+                    class="heading-decoration"
+                    aria-hidden="true"
+                >
+                    <span class="heading-line"></span>
+                    <span class="heading-pearl"></span>
+                    <span class="heading-ribbon">◇</span>
+                    <span class="heading-pearl"></span>
+                    <span class="heading-line"></span>
+                </div>
+
+            </div>
+
+            <div class="news-list">
+
+                <article class="news-item">
+                    <time datetime="2026-07-26">
+                        2026.07.26
+                    </time>
+                    <p>公式ウェブサイトを公開しました。</p>
+                </article>
+
+                <article class="news-item">
+                    <time datetime="2026-07-26">
+                        2026.07.26
+                    </time>
+                    <p>最新のお知らせはこちらに掲載します。</p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+
+    <div
+        class="footer-lace"
+        aria-hidden="true"
+    ></div>
+
+    <div class="footer-inner">
+
+        <p class="footer-title">Contact</p>
+
+        <p class="footer-message">
+            お問い合わせや各種ご連絡は、公式SNSよりお願いいたします。
+        </p>
+
+        <div class="footer-links">
+
+            <a
+                href="https://www.youtube.com/@nullxvoidxx"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                YouTube
+            </a>
+
+            <a
+                href="https://x.com/nullxvoidxx"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                X
+            </a>
+
+            <a
+                href="https://web.iriam.app/s/user/3M1T134PWo?uuid=e7f61f56"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                IRIAM
+            </a>
+
+            <a
+                href="https://note.com/nullxvoidxx"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                note
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Inori Kannatsumi. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
-
 </html>

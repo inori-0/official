@@ -65,13 +65,6 @@ button { font: inherit; }
     letter-spacing: .07em;
     white-space: nowrap;
 }
-.logo-pearl, .heading-pearl {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 30% 25%, #fff 0 25%, #eadff0 43%, #ae94bb 100%);
-    box-shadow: 0 0 0 1px rgba(139,117,152,.2), 0 2px 5px rgba(74,56,84,.18);
-}
 .global-nav { display: flex; align-items: center; gap: 30px; }
 .global-nav a {
     position: relative;
@@ -128,39 +121,22 @@ button { font: inherit; }
     position: relative;
     width: min(calc(100% - 120px), 900px);
     margin: 0 auto;
-    padding: 13px;
-    background: rgba(255,255,255,.76);
-    border: 1px solid rgba(184,154,97,.34);
-    box-shadow: var(--shadow);
+    overflow: visible;
+    border-radius: 2px;
+    box-shadow: 0 18px 45px rgba(73, 55, 84, 0.16);
 }
-
 .hero-image {
+    position: relative;
+    z-index: 1;
+    display: block;
     width: 100%;
     height: 380px;
-    display: block;
     object-fit: cover;
     object-position: center;
 }
-.hero-copy {
-    position: absolute;
-    left: clamp(30px, 6vw, 88px);
-    bottom: clamp(42px, 7vw, 88px);
-    max-width: 560px;
-    padding: 28px 34px;
-    background: rgba(255,255,255,.82);
-    border: 1px solid rgba(184,154,97,.3);
-    box-shadow: 0 14px 35px rgba(57,43,66,.12);
-    text-shadow: 0 1px 0 #fff;
-}
-.hero-subtitle { margin: 0 0 4px; color: var(--gold); font-family: "Cormorant Garamond", serif; font-size: 12px; letter-spacing: .17em; }
-.hero-copy h1 { margin: 0; color: var(--deep-purple); font-family: "Yu Mincho", serif; font-size: clamp(40px, 5vw, 64px); font-weight: 500; letter-spacing: .12em; line-height: 1.3; }
-.hero-copy > p:last-child { margin: 5px 0 0; color: var(--sub-text); font-family: "Yu Mincho", serif; font-size: 15px; }
-.hero-lace, .lace-border, .footer-lace {
-    height: 22px;
-    background-image: url("../images/lace.png");
-    background-repeat: repeat-x;
-    background-size: auto 22px;
-    opacity: .7;
+.hero-copy,
+.hero-subtitle {
+    display: none !important;
 }
 .hero-lace { position: absolute; left: 13px; right: 13px; z-index: 2; }
 .hero-lace-top { top: -8px; }
@@ -260,19 +236,15 @@ button { font: inherit; }
     .global-nav { position:fixed; top:66px; right:0; left:0; display:grid; gap:0; padding:18px 22px 24px; background:rgba(255,255,255,.98); border-bottom:1px solid var(--border); box-shadow:var(--shadow); opacity:0; pointer-events:none; transform:translateY(-12px); transition:.25s; }
     .global-nav.open { opacity:1; pointer-events:auto; transform:translateY(0); }
     .global-nav a { padding:12px 4px; text-align:center; }
-    .hero {
-    padding: 10px 0 30px;
-}
-    .hero-inner { width:calc(100% - 20px); padding:8px; }
+    .hero { padding: 0 0 16px; }
+    .hero-inner { width: calc(100% - 16px); }
     .hero-image {
-    height: auto;
-    min-height: 0;
-    width: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-    .hero-copy { inset:auto 18px 42px; max-width:none; padding:20px 18px; text-align:center; }
-    .hero-copy h1 { font-size:38px; }
+        width: 100%;
+        height: 220px;
+        min-height: 0;
+        object-fit: cover;
+        object-position: center;
+    }
     .hero-lace { left:8px; right:8px; }
     .content-section { padding:65px 0; }
     .section-heading { margin-bottom:38px; }
@@ -329,15 +301,6 @@ button { font: inherit; }
 .category-pearl { width: 21px; height: 21px; }
 .pearl-decoration { width: 22px; height: 22px; }
 .heading-ribbon { display: none; }
-
-.hero-inner::before,
-.hero-inner::after {
-    content: "";
-    background: transparent url("../images/pearl.png") center / contain no-repeat;
-}
-
-/* Banner image stays clean: no text overlay. */
-.hero-copy { display: none; }
 
 /* The supplied lace image is used on the hero, section borders, and footer. */
 .hero-lace,
@@ -417,151 +380,4 @@ button { font: inherit; }
     border: 1px dashed var(--border);
     text-align: center;
     font-size: 13px;
-}
-
-@media (max-width: 700px) {
-    .gallery-category { margin-top: 48px; }
-    .gallery-category-title { font-size: 26px; }
-    .hero-image { min-height: 0; }
-}
-
-
-/* Final banner cleanup: show only the supplied banner image and lace. */
-.hero-inner {
-    padding: 0;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    overflow: visible;
-}
-.hero-inner::before,
-.hero-inner::after,
-.hero-copy,
-.hero-subtitle {
-    display: none !important;
-    content: none !important;
-}
-.hero-image {
-    position: relative;
-    z-index: 1;
-}
-
-/* =========================================
-   Banner pearl frame — aligned corners
-========================================= */
-.hero-inner {
-    border-radius: 2px;
-    box-shadow: 0 18px 45px rgba(73, 55, 84, 0.16);
-}
-
-
-/* =========================================
-   Gallery lightbox
-========================================= */
-.gallery-lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 32px;
-    background: rgba(34, 28, 39, .82);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .25s ease, visibility .25s ease;
-}
-.gallery-lightbox.is-open {
-    opacity: 1;
-    visibility: visible;
-}
-.gallery-lightbox-content {
-    width: min(90vw, 760px);
-    max-height: 90vh;
-    padding: 12px;
-    overflow: auto;
-    background: #fff;
-    border: 1px solid rgba(184, 154, 97, .55);
-    box-shadow: 0 24px 70px rgba(0, 0, 0, .34);
-    transform: scale(.96);
-    transition: transform .25s ease;
-}
-.gallery-lightbox.is-open .gallery-lightbox-content { transform: scale(1); }
-.gallery-lightbox-image {
-    display: block;
-    width: 100%;
-    max-height: calc(90vh - 110px);
-    object-fit: contain;
-    background: #f8f5f9;
-}
-.gallery-lightbox-info { padding: 14px 8px 4px; text-align: center; }
-.gallery-lightbox-title {
-    margin: 0;
-    color: var(--dark-purple);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 23px;
-}
-.gallery-lightbox-illustrator { margin: 4px 0 0; color: var(--sub-text); font-size: 11px; }
-.gallery-lightbox-close {
-    position: fixed;
-    top: 18px;
-    right: 22px;
-    width: 46px;
-    height: 46px;
-    padding: 0;
-    color: #fff;
-    background: rgba(255, 255, 255, .14);
-    border: 1px solid rgba(255, 255, 255, .55);
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 30px;
-    line-height: 1;
-}
-body.gallery-lightbox-open { overflow: hidden; }
-
-@media (max-width: 700px) {
-    .gallery-lightbox { padding: 58px 14px 18px; }
-    .gallery-lightbox-content { width: 100%; padding: 8px; }
-    .gallery-lightbox-image { max-height: calc(88vh - 110px); }
-    .gallery-lightbox-close { top: 10px; right: 12px; width: 40px; height: 40px; font-size: 26px; }
-}
-@media (max-width: 700px) {
-    .hero {
-        padding: 10px 0 30px;
-    }
-
-    .hero-inner {
-        width: calc(100% - 20px);
-    }
-
-    .hero-image {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-        max-height: none;
-        object-fit: contain;
-        object-position: center;
-    }
-}
-/* =========================================
-   Smartphone Banner
-========================================= */
-
-@media (max-width:700px){
-
-    .hero{
-        padding:0 0 16px;
-    }
-
-    .hero-inner{
-        width:calc(100% - 16px);
-    }
-
-    .hero-image{
-        height:220px !important;
-        width:100%;
-        object-fit:cover;
-        object-position:center;
-    }
-
 }

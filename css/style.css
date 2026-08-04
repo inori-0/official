@@ -260,9 +260,17 @@ button { font: inherit; }
     .global-nav { position:fixed; top:66px; right:0; left:0; display:grid; gap:0; padding:18px 22px 24px; background:rgba(255,255,255,.98); border-bottom:1px solid var(--border); box-shadow:var(--shadow); opacity:0; pointer-events:none; transform:translateY(-12px); transition:.25s; }
     .global-nav.open { opacity:1; pointer-events:auto; transform:translateY(0); }
     .global-nav a { padding:12px 4px; text-align:center; }
-    .hero { padding:26px 0 62px; }
+    .hero {
+    padding: 10px 0 30px;
+}
     .hero-inner { width:calc(100% - 20px); padding:8px; }
-    .hero-image { min-height:470px; object-position:62% center; }
+    .hero-image {
+    height: auto;
+    min-height: 0;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
     .hero-copy { inset:auto 18px 42px; max-width:none; padding:20px 18px; text-align:center; }
     .hero-copy h1 { font-size:38px; }
     .hero-lace { left:8px; right:8px; }
